@@ -1,4 +1,2 @@
-FROM php:5-fpm
-
-RUN docker-php-ext-install mysql mysqli
-RUN echo "localhost localhost.localdomain" >> /etc/hosts
+FROM php:7-fpm
+RUN docker-php-ext-install mysqli
